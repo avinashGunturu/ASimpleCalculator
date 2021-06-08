@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e93b81;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1 {
+  color: #ffe5e2;
+}
+
+h2 {
+  color: #1eae98;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  padding: 8px 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.clear {
+  position: absolute;
+  top: 85%;
+  right: 10%;
+  font-family: inherit;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 7rem;
+  color: #e93b81;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.clear:focus {
+  outline: none;
+}
+
+.clear:active {
+  transform: scale(0.95);
+  background-color: pink;
+  color: #fff;
+}
+
+.maincontainer {
+  background-color: #f5abc9;
+  margin: 20px auto;
+  padding: 2rem;
+  border: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container1 form {
+  margin-bottom: 0.8rem;
+}
+.container1 .btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.container1 form #input1 {
+  border: 0;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.container1 form #input2 {
+  border: 0;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container1 form input:focus {
+  outline: 0;
+}
+
+.container1 .btns .btn {
+  background-color: #e93b81;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 25px;
+}
+
+.container1 .btns .btn:focus {
+  outline: none;
+}
+.container1 .btn:hover {
+  /* background-color: pink;
+    color: black; */
+  transform: scale(0.96);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 667px) {
+  .maincontainer {
+    width: 300px;
+  }
+  .container1 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .container1 form #input1 {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .container1 form #input2 {
+    margin: 0;
+    margin-top: 5px;
+  }
+}
